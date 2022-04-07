@@ -35,4 +35,4 @@ const getState = (state: any) => {
   return { songs: state.songs };
 }
 
-export default connect(getState, { selectSong: selectSong })(SongList);
+export default connect(getState, { selectSong })(SongList);
